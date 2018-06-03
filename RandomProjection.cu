@@ -276,7 +276,7 @@ void show1MotifResult()
 			bestMotifLocationSoFar.clear();
 
 			bestMotifLocationSoFar.push_back(i);
-			std::multimap<uchar, int, std::greater<uchar>>::iterator iter = pointers.begin();
+			std::multimap<uchar, int, std::greater<uchar> >::iterator iter = pointers.begin();
 			for ( ; iter != pointers.end(); iter++) {
 				if (iter->first > 0)
 					bestMotifLocationSoFar.push_back(iter->second);
@@ -318,10 +318,11 @@ void testCudaRandomProjection(){
 }
 
 
-void main(){
+int main(){
 	printf("\nWORDS = %d\n", NUM_WORDS);	
 	clock_t begin = clock();
 	testCudaRandomProjection();
 	clock_t end = clock();
 	printf("Total exec time was: %d ms\n\n", end - begin);
+	return 0;
 }
