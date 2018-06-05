@@ -3,7 +3,7 @@
 #echo arguments to the shell
 
 DB_NAME=synth16d
-DB_TRAIN=\"/home/aocsa/dataset/$DB_NAME/$DB_NAME.TRAIN\"
+DB_TRAIN=home/aocsa/datasets/$DB_NAME/$DB_NAME.TRAIN
 DB_SIZE=10000
 WORD_SIZE=8
 CARDINALITY=8
